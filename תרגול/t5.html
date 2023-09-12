@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default styles */
+        body,
+        h1,
+        h2,
+        h3,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Sticky header with navigation */
+        header.sticky {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: #fff;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-items {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-items li {
+            margin-right: 20px;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-items a:hover {
+            color: #00bcd4;
+        }
+
+        /* Style sections as needed */
+        .section {
+            padding: 40px;
+        }
+
+        /* Section 1 - Picture with logo */
+        #section1 {
+            background-image: url('your-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+        }
+
+        /* Section 2 - Small bar with 11 pics */
+        #section2 {
+            background-color: #f2f2f2;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #section2 img {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+
+        /* Section 3 - Profile pic and info about you */
+        #section3 {
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Section 4 - Project cards */
+        #section4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project-card {
+            width: calc(50% - 20px);
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Section 5 - Footer with contact info */
+        #section5 {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .contact-info {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Add your specific styles for each section as needed */
+    </style>
+</head>
+
+<body>
+    <header class="sticky">
+        <nav>
+            <div class="left">
+                <h1>Your Name</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#section1">Section 1</a></li>
+                    <li><a href="#section2">Section 2</a></li>
+                    <li><a href="#section3">Section 3</a></li>
+                    <li><a href="#section4">Section 4</a></li>
+                    <li><a href="#section5">Section 5</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="section1">
+        <div class="section-content">
+            <!-- Section 1 Content -->
+            <img src="logo.png" alt="Logo">
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="section-content">
+            <!-- Section 2 Content -->
+            <div class="image-bar">
+                <!-- 11 small images here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div class="section-content">
+            <!-- Section 3 Content -->
+            <img src="profile-pic.jpg" alt="Profile Picture">
+            <p>Short description about yourself.</p>
+        </div>
+    </section>
+
+    <section id="section4">
+        <div class="section-content">
+            <!-- Section 4 Content -->
+            <div class="project-cards">
+                <!-- 6 project cards here (2 rows with 3 cards each) -->
+            </div>
+        </div>
+    </section>
+
+    <section id="section5">
+        <div class="section-content">
+            <!-- Section 5 Content -->
+            <footer>
+                <h2>Contact Info</h2>
+                <p>Email: your@email.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </footer>
+        </div>
+    </section>
+
+</body>
+
+</html>

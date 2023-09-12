@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default browser styles */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Apply a background color and styles to the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the header section */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Style the navigation menu */
+        nav ul {
+            list-style: none;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Style sections */
+        section {
+            padding: 2rem;
+            background-color: #fff;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style portfolio items */
+        .portfolio-item {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Add responsive styles */
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.5rem;
+            }
+
+            nav ul {
+                font-size: 0.9rem;
+            }
+
+            section {
+                padding: 1rem;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style><!-- Create a separate CSS file for styling -->
+</head>
+
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer | Designer | Creative Enthusiast</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Write a brief introduction about yourself here.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <!-- Add your portfolio items here -->
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Description of project 1.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Description of project 2.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me at <a href="mailto:your@email.com">your@email.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+</body>
+
+</html>

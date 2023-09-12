@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Your Portfolio</title>
+    <style>
+        /* Reset some default browser styles */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Apply a background color and styles to the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the header section */
+        header {
+            background-color: #333;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        /* Style the navigation menu */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        nav h1 {
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Style sections */
+        section {
+            padding: 4rem 0;
+            background-color: #fff;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style portfolio items */
+        .portfolio-item {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* ... (previous CSS rules) ... */
+
+        /* Style portfolio item cards */
+        .portfolio-item-card {
+            text-align: center;
+            margin-bottom: 2rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .portfolio-item-card:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item-card a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 1rem;
+        }
+
+        .portfolio-item-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .portfolio-item-card h3 {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        /* Style portfolio rows */
+        .portfolio-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        /* Style portfolio item cards */
+        .portfolio-item-card {
+            flex: 0 0 calc(33.333% - 20px);
+            /* Adjust the width as needed */
+            text-align: center;
+            margin-bottom: 2rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .portfolio-item-card:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item-card a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 1rem;
+        }
+
+        .portfolio-item-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .portfolio-item-card h3 {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+
+        /* Style the footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Add responsive styles */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav h1 {
+                margin-bottom: 1rem;
+            }
+
+            nav ul {
+                margin-top: 1rem;
+            }
+
+            nav ul li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            section {
+                padding: 2rem 0;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Your Name</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Write a brief introduction about yourself here.</p>
+        </div>
+    </section>
+    <section id="portfolio">
+        <!-- Inside the #portfolio section, add three portfolio-item-card elements -->
+        <section id="portfolio">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div class="portfolio-row">
+                    <div class="portfolio-item-card">
+                        <a href="project1.html">
+                            <img src="project1.jpg" alt="Project 1">
+                            <h3>Project 1</h3>
+                        </a>
+                    </div>
+                    <div class="portfolio-item-card">
+                        <a href="project2.html">
+                            <img src="project2.jpg" alt="Project 2">
+                            <h3>Project 2</h3>
+                        </a>
+                    </div>
+                    <div class="portfolio-item-card">
+                        <a href="project3.html">
+                            <img src="project3.jpg" alt="Project 3">
+                            <h3>Project 3</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-row">
+                    <div class="portfolio-item-card">
+                        <a href="project4.html">
+                            <img src="project4.jpg" alt="Project 4">
+                            <h3>Project 4</h3>
+                        </a>
+                    </div>
+                    <div class="portfolio-item-card">
+                        <a href="project5.html">
+                            <img src="project5.jpg" alt="Project 5">
+                            <h3>Project 5</h3>
+                        </a>
+                    </div>
+                    <div class="portfolio-item-card">
+                        <a href="project6.html">
+                            <img src="project6.jpg" alt="Project 6">
+                            <h3>Project 6</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>You can reach me at <a href="mailto:your@email.com">your@email.com</a></p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2023 Your Name</p>
+            </div>
+        </footer>
+</body>
+
+</html>

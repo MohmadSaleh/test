@@ -1,0 +1,367 @@
+     /* Reset some default styles */
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
+
+     /* Sticky header with navigation */
+     header.sticky {
+         position: sticky;
+         top: 0;
+         background-color: #fff;
+         color: #000;
+         z-index: 100;
+         width: 100vw;
+         height: 80px;
+     }
+
+     nav {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 10px 20px;
+     }
+
+     .logo {
+         font-size: 24px;
+         font-weight: bold;
+     }
+
+     .nav-items {
+         list-style: none;
+         display: flex;
+     }
+
+     .nav-items li {
+         margin-right: 20px;
+     }
+
+     .nav-items a,
+     .logo a {
+         text-decoration: none;
+         color: #000;
+         font-weight: bold;
+         transition: color 0.3s;
+     }
+
+     .nav-items a:hover,
+     .logo a:hover {
+         color: rgb(0, 188, 212);
+     }
+
+     #section1,
+     img[src*='banner'] {
+         width: 100vw;
+         height: 461px;
+         /* background-color: rgb(0, 188, 212); */
+         background-image: linear-gradient(to Bottom, rgba(0, 188, 212, 0.5), rgba(255, 255, 255, 0.8)), url('bannerpic.jpg');
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+     }
+
+     img[src*='banner'] {
+         opacity: 0.5;
+     }
+
+     .porfolioHeading,
+     .portfolioGraph {
+         width: 800px;
+     }
+
+     /* section2-a thechnology used in the projects */
+     #section2 {
+         width: 100vw;
+         height: 80px;
+         background-color: #fff;
+     }
+
+     .bulidingTechBar,
+     .bulidingTechBar ul {
+         width: 100vw;
+         display: flex;
+         background-color: #fff;
+         justify-content: space-evenly;
+     }
+
+     .bulidingTechBar ul li {
+         list-style-type: none;
+     }
+
+     .bulidingTechBar ul li img {
+         width: 80px;
+         height: auto;
+         flex-direction: row;
+     }
+
+
+     /* Section 3 - Profile pic and info about me */
+     #section3 {
+         width: 100vw;
+         height: 715px;
+         text-align: center;
+         background-color: #f5f5f5;
+         padding: 60px 0;
+     }
+
+     .profile-pic {
+         width: 200px;
+         height: 200px;
+         border-radius: 50%;
+         object-fit: cover;
+         margin-bottom: 10px;
+         margin: 0 auto;
+     }
+
+     .profile-info {
+         max-width: 600px;
+         margin: 0 auto;
+     }
+
+     .profile-info h2 {
+         font-size: 24px;
+         margin-bottom: 20px;
+     }
+
+     /* 
+  .profile-info p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .portfolio-item {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+        } */
+
+
+     /* Section 4 - Project cards */
+     #section4 {
+         width: 100vw;
+         height: 1558px;
+         display: grid;
+         grid-template-columns: 150px repeat(3, 1fr) 150px;
+         grid-template-rows: 290px 518px 518px;
+         gap: 20px;
+         padding: 80px;
+     }
+
+
+     .project-card {
+         width: 300px;
+         height: auto;
+         margin: 0 auto;
+         background-color: #fff;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         padding: 20px;
+         text-align: center;
+         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+     }
+
+     .project1,
+     .project2,
+     .project3 {
+         grid-row: 2/3;
+     }
+
+     .project4,
+     .project5,
+     .project6 {
+         grid-row: 3/4;
+     }
+
+     .project1,
+     .project4 {
+         grid-column: 2/3;
+     }
+
+     .project2,
+     .project5 {
+         grid-column: 3/4;
+     }
+
+     .project3,
+     .project6 {
+         grid-column: 4/5;
+     }
+
+     .project4,
+     .project5,
+     .project6 {
+         grid-row: 3/4;
+     }
+
+     .project-card img {
+         max-width: 100%;
+         height: auto;
+         border-radius: 5px;
+         transition: transform 0.3s ease-in-out;
+     }
+
+     .project-info {
+         margin-top: 20px;
+     }
+
+     .project-info h3 {
+         font-size: 18px;
+         margin-bottom: 10px;
+     }
+
+     .project-info ul {
+         list-style-type: none;
+         display: flex;
+         justify-content: space-around;
+         text-align: center;
+     }
+
+     .project-info ul li {
+         flex-direction: left;
+     }
+
+     .project-info ul li img {
+         width: 28px;
+         height: auto;
+     }
+
+     .project-info p {
+         font-size: 16px;
+         color: #555;
+         margin-bottom: 10px;
+     }
+
+     .project-link {
+         display: inline-block;
+         background-color: #00bcd4;
+         color: #fff;
+         padding: 8px 16px;
+         text-decoration: none;
+         border-radius: 5px;
+         transition: background-color 0.3s;
+     }
+
+     .project-link:hover {
+         background-color: #0084a8;
+     }
+
+     .project-card:hover {
+         transform: translateY(-10px);
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+     }
+
+     .project-card:hover img {
+         transform: scale(1.1);
+     }
+
+     /* Section 5 - Contact section */
+     #section5 {
+         width: 100vw;
+         height: 959px;
+         background-color: #333;
+         color: #fff;
+         text-align: center;
+     }
+
+     .contact-container {
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         gap: 40px;
+     }
+
+     .contact-img {
+         flex: top;
+         text-align: left;
+         width: 700px;
+         height: auto;
+         margin-top: 0;
+     }
+
+     .contact-img img {
+         flex: 1;
+         text-align: left;
+         width: 700px;
+         height: auto;
+     }
+
+
+     .contact-info h2 {
+         font-size: 24px;
+         margin-bottom: 20px;
+     }
+
+     .contact-info p {
+         font-size: 16px;
+         line-height: 1.5;
+     }
+
+     .contact-form {
+         flex: 1;
+         width: 400px;
+         margin-top: 200px;
+         margin-right: 100px;
+     }
+
+     input[type="text"],
+     input[type="email"],
+     textarea {
+         width: 100%;
+         padding: 10px;
+         margin-bottom: 20px;
+         border: 1px solid #ddd;
+         border-radius: 5px;
+         background-color: #f5f5f5;
+         color: #333;
+     }
+
+     button[type="submit"] {
+         background-color: #00bcd4;
+         color: #fff;
+         padding: 10px 20px;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+         transition: background-color 0.3s;
+         margin-bottom: 50px;
+     }
+
+     button[type="submit"]:hover {
+         background-color: #0084a8;
+     }
+
+     /* Bottom Bar with social media Links */
+     .bottom-bar {
+         display: flex;
+         width: 100vw;
+         height: 200px;
+         background-color: rgba(26, 224, 236, 1);
+         text-align: center;
+         padding: 20px 0;
+         justify-content: space-around;
+     }
+
+     .bottom-bar a {
+         display: inline-block;
+         margin: 0 20px;
+         text-decoration: none;
+         transition: transform 0.3s ease-in-out;
+     }
+
+     .bottom-bar img {
+         margin-top: 55px;
+         max-width: 120px;
+         height: auto;
+         transition: transform 0.3s ease-in-out;
+     }
+
+     .bottom-bar a:hover img {
+         transform: scale(1.1);
+     }
